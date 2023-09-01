@@ -341,6 +341,34 @@ body {
   letter-spacing: 0.32px;
 }
 
+.our-portfolio-slider{
+  position: relative;
+  overflow: hidden;
+}
+
+.our-portfolio-slider-text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4D5AE5;
+  color: #F4F4FD;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  padding: 40px 32px;
+  height: 100%;
+  transform: translateY(100%);
+  overflow: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-link:hover .our-portfolio-slider-text,
+.our-portfolio-link:focus .our-portfolio-slider-text{
+  transform: translateY(0%);
+}
+
 .foot {
   background-color: #2e2f42;
   padding: 100px 0;
